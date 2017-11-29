@@ -1,0 +1,400 @@
+@import 'mixins'
+@import 'Variables'
+@import 'functions'
+@import 'purple-theme'
+@import 'media'
+*
+    user-select: none
+.cProgress
+    width: 148px
+    height: 29px
+    display: inline-block
+    .progressive
+        display: inline-block
+        color: black
+        width: 15px
+        height: 15px
+        border-radius: 50%
+    .unprogressive 
+        display: inline-block
+        background: transparent
+        color: black
+        width: 15px
+        height: 15px
+        border-radius: 50%
+.row
+    margin-top: 50px
+    margin-left: 0
+    margin-right: 0
+.label
+    i, h2
+        display: inline-block
+    i
+        margin-right: 20px
+        font-size: 40px
+    h2
+        font-size: 30px
+        font-family: $gothamBold
+        text-transform: uppercase
+header
+    color: $masterColor
+    height: (455/2)+px
+    .left-side
+        transform: translate(-0%,20%)
+        margin-left: (128/2)+px
+        float: left
+        h1
+            text-transform: uppercase
+            font-family: $gothamBold
+            font-size: (90/2)+px
+        h2
+            text-transform: uppercase
+            font-family: $gothamRegular
+            font-size: (59/2)+px
+            text-align: right
+            color: #fff
+    .right-side
+        width: 270px
+        float: right
+        margin-right: (114/2)+px
+        transform: translate(-0%,50%)
+        p
+            &:first-of-type
+                &:before
+                    content: 'mobile:'
+                    margin-right: 10%
+                    text-transform: uppercase
+            &:nth-of-type(2)
+                &:before
+                    content: 'email:'
+                    margin-right: 15%
+                    text-transform: uppercase
+            &:nth-of-type(3)
+                &:before
+                    content: 'address:'
+                    margin-right: 5%
+                    text-transform: uppercase
+            text-align: left
+            font-family: $gothamBold
+            &:before
+                font-family: $gothamRegular
+
+.med
+    .personalInfo
+        margin-top: 2%
+        margin-bottom: 30px
+        p
+            &:first-of-type
+                &:before
+                    content: 'NAME:'
+                    font-family: $gothamRegular
+                    font-size: 20px
+                    margin-right: 50px
+            &:nth-of-type(2)
+                &:before
+                    content: 'BIRTHDAY:'
+                    font-family: $gothamRegular
+                    font-size: 20px
+                    margin-right: 10px
+            &:nth-of-type(3)
+                &:before
+                    content: 'STATUS:'
+                    font-family: $gothamRegular
+                    font-size: 20px
+                    margin-right: 35px
+            font-family: $gothamRegular
+            font-size: 20px
+            color: black
+            margin-left: 88px
+            margin-top: 20px
+    .experience
+        margin-top: 2%
+        .label
+            display: block
+            margin-right: 50px
+        h3
+            margin-top: 20px
+            font-size: 20px
+            float: left
+            font-family: $gothamRegular
+            line-height: 2
+        .links
+            display: block
+            float: left
+            margin-left: 30px
+            margin-top: 15px
+            div
+                margin-bottom: 20px
+                a, span
+                    font-family: $gothamRegular
+                    font-size: 20px
+                    margin-left: 30px
+                    &:hover
+                        color: #6e8bd4
+                span
+                    margin-left: 30px
+                    display: none
+                    opacity: 0
+                img
+                    width: 60px
+    .about
+        padding: 25px
+        background: #e3eaff
+        .label
+            line-height: 7
+            margin-left: 1px
+            margin-bottom: 0px
+        p
+            font-size: 22px
+            font-family: $gothamRegular
+    .professional-skills
+        h2.h1
+            color: #eaf3fd
+            font-size: (45*2)+px
+            font-family: $gothamBlack
+            transform: rotate(-90deg) translateY(-80px) translateX(-60px)
+            float: left
+            position: relative
+            left: 0
+        .skills
+            position: relative
+            margin-left: 75px
+            width: 300px
+            .skills-name
+                div
+                    margin-bottom: 5px
+                position: absolute
+                left: 0
+                float: left
+                display: inline
+                width: 50%
+                font-size: 17px
+                font-family: $gothamRegular
+            .skills-progress
+                position: absolute
+                float: right
+                display: inline
+                width: 50%
+                .cProgress
+                    display: inline
+                    float: left
+    .Project-manager
+        display: inline-block
+        .headings
+            float: left
+            display: inline-block
+            >h2
+                margin-top: 0
+                font-size: 20px
+                font-family: $gothamRegular
+            >p
+                font-family: $gothamRegular
+                font-size: 16px
+                &:last-of-type
+                    margin-bottom: 0
+        .projects
+            padding-left: 15px
+            padding-bottom: 0
+            padding-top: 0
+            border-left: 1px solid #D8D8D8
+            >h2
+                font-family: $gothamRegular
+                display: inline-block
+                white-space: nowrap
+                position: relative
+                margin-top: 0
+                &:before
+                    content: ''
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    left: -26px
+                    top: 0
+                    background: #D8D8D8
+                    border-radius: 50%
+                    border: 2px solid #D8D8D8
+                    box-shadow: 0px 0px 0px 6px #fff inset
+                &:first-of-type
+                    &:before
+                        width: 25px
+                        height: 25px
+                        left: -28px
+                        top: -5px
+                        box-shadow: 0px 0px 0px 7px #fff inset
+                        background: #5ABCFC
+            >p
+                font-family: $gothamRegular
+                display: block
+                white-space: nowrap
+    .eduction
+        margin-top: 10px
+        .label
+            display: block
+        .headings
+            float: left
+            display: inline-block
+            >h2
+                margin-top: 0
+                margin-bottom: 2px
+                font-family: $gothamRegular
+            >p
+                font-family: $gothamRegular
+                font-size: 16px
+                &:last-child
+                    margin-bottom: 0
+        .Universities
+            position: relative
+            padding-left: 20px
+            border-left: 1px solid #D8D8D8
+            >p
+                font-family: $gothamRegular
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: #D8D8D8
+                    left: -11px
+                    border-radius: 50%
+                    border: 3px solid #D8D8D8
+                    box-shadow: 0px 0px 0px 6px #fff inset
+                &:first-of-type
+                    &:before
+                        width: 25px
+                        height: 25px
+                        left: -14px
+                        top: -5px
+                        box-shadow: 0px 0px 0px 7px #fff inset
+                        background: #5ABCFC
+
+.soft-skills
+    height: 230px
+    h2.h1
+        color: #eaf3fd
+        font-size: (45*2)+px
+        font-family: $gothamBlack
+        transform: rotate(-90deg) translateY(-80px) translateX(-60px)
+        float: left
+        position: relative
+        left: 0
+    .skills
+        position: relative
+        width: 300px
+        height: 310px
+        .skills-name
+            margin-top: -5px
+            div
+                margin-bottom: 7px
+            left: 0
+            float: left
+            display: inline
+            width: 50%
+            font-size: 17px
+            font-family: $gothamRegular
+        .skills-progress
+            position: absolute
+            float: right
+            display: inline
+            width: 50%
+            .cProgress
+                display: inline
+                float: left
+                margin-bottom: 3px
+.hobbies
+    margin-top: 10px
+    .main
+        .label
+            margin-left: -13px
+            h2
+                font-size: 25px
+        .left
+            float: left
+            margin-right: 10px
+        .hobbie
+            width: 80px
+            display: flex
+            flex-direction: column
+            text-align: center
+            div
+                width: 80px
+                height: 80px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+            span
+                font-size: 12px
+                text-transform: capitalize
+                font-family: $gothamRegular
+            i
+                font-size: 40px
+        .music
+            i
+                margin-left: -2px
+    .others
+        .label
+            margin-left: 5px
+        ul
+            li
+                font-family: $gothamRegular
+                margin-bottom: 10px
+                position: relative
+                &:before
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    top: 5px
+                    left: -20px
+                    border-radius: 50%
+                    position: absolute
+.typed-cursor
+    display: none
+.loader
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 9999
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #fff
+.colorChanger
+    position: fixed
+    top: 120px
+    left: -150px
+    button
+        width: 46px
+        height: 46px
+        outline: none
+        background: #7394ff
+        border: 4px solid #AAA
+        border-radius: 0 20% 20% 0
+        color: #fff
+        font-size: 25px
+    .changer
+        float: left
+        width: 150px
+        height: 100px
+        text-align: center
+        padding-top: 10px
+        background: #7394ff
+        color: #fff
+        border-radius: 0 0 20% 0
+        .colors
+            display: none
+            justify-content: center
+            .color
+                margin-left: 10px
+                margin-right: 10px
+                width: 20px
+                height: 20px
+                background: #fff
+            .green
+                background: #73ff7e
+            .purple
+                background: #7394ff
+            .blue
+                background: #82fff3
